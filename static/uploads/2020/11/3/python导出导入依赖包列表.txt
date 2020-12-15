@@ -1,0 +1,6 @@
+1、生成requirements.txt项目依赖列表文件
+pip freeze > requirements.txt
+
+
+2、安装requirements.txt依赖
+pip install -r requirements.txt

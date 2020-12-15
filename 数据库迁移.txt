@@ -1,0 +1,19 @@
+
+#数据库迁移
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+
+#导入数据
+
+use managesystem;
+
+set charset utf8;
+
+source managesystem.sql;
+
+
+asgi启动
+uvicorn --host 0.0.0.0 ManageSystem.asgi:application

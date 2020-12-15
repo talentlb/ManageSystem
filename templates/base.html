@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    {% block TKD %}
+    <title>营销型企业官网建设</title>
+    {% endblock %}
+    <link href="/static/css/public.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/css/home.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/css/model.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/css/iconfont/iconfont.css" rel="stylesheet" type="text/css"/>
+    <script src="/static/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="/static/js/modal.js"></script>
+    <script type="text/javascript" src="/static/js/function.js"></script>
+    {% block CSS_JS %}{% endblock %}
+
+</head>
+<body>
+
+<div class="container container_bg" id="top">
+    <div class="header">
+        <div class="logo"><a href="/"><img src="/static/images/logo.png"></a></div>
+        <div class="main_nav">
+            <ul>
+                <li><a href="/" {% block nav_index %}{% endblock %}><p>首页</p><p>HOME</p></a></li>
+                <li><a href="/website.html" {% block nav_website %}{% endblock %}><p>网站建设</p><p>WEBSITE</p></a></li>
+                <li><a href="/marketing.html" {% block nav_marketing %}{% endblock %}><p>营销推广</p><p>MARKETING</p></a></li>
+                <li><a href="/service.html" {% block nav_service %}{% endblock %}><p>增值服务</p><p>SERVICES</p></a></li>
+                <li><a href="/case/" {% block nav_case %}{% endblock %}><p>案例展示</p><p>CASE</p></a></li>
+                <li><a href="/technical/" {% block nav_technical %}{% endblock %}><p>技术中心</p><p>TECHNICAL</p></a></li>
+                <li><a href="/contact.html" {% block nav_contact %}{% endblock %}><p>联系我们</p><p>CONTACT</p></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container sub_nav" id="sub_nav2">
+    <div class="sub_frame">
+        <div class="sub_nav_left"></div>
+        <ul>
+            <li><a href="/website.html">营销型企业官网建设</a><span>/</span></li>
+            <li><a href="/mall.html">电商型网站建设</a><span>/</span></li>
+            <li><a href="/brand.html">品牌展示型网站建设</a><span>/</span></li>
+            <li><a href="/difference.html">三大类网站的区别</a></li>
+        </ul>
+        <div id="buoy"></div>
+    </div>
+</div>
+
+<div class="container sub_nav" id="sub_nav3">
+    <div class="sub_frame">
+        <div class="sub_nav_left sub_nav_left2"></div>
+        <ul>
+            <li><a href="/seo.html">SEO优化</a><span>/</span></li>
+            <li><a href="/sem.html">SEM竞价</a><span>/</span></li>
+            <li><a href="/seo_vs_sem.html">SEO与SEM对比</a></li>
+        </ul>
+        <div id="buoy2"></div>
+    </div>
+</div>
+
+{% block page_content %}
+<div id="pos_dot">
+    <ul>
+        <li><a href="#top" class="active">1</a></li>
+        <li><a href="#bg2">2</a></li>
+        <li><a href="#bg3">3</a></li>
+        <li><a href="#bg4">4</a></li>
+        <li><a href="#bg5">5</a></li>
+    </ul>
+</div>
+
+<div class="bg bg1">
+    <div class="bg_content">
+        <div class="title">营销型网站建设</div>
+        <ul>
+            <a href="#bg2"><li><i class="iconfont icon-fangwenliang"></i><span>流量</span><p>建站8大维度，保障网站流量源源不断</p></li></a>
+            <a href="#bg3"><li><i class="iconfont icon-zixun"></i><span>线索</span><p>通过一系列网页引导获取大量线索</p></li></a>
+            <a href="#bg4"><li><i class="iconfont icon-hetong"></i><span>订单</span><p>我们所做的一切努力只为完成最终目标 — 订单转化！</p></li></a>
+        </ul>
+    </div>
+</div>
+
+<div class="bg bg2" id="bg2">
+    <div class="bg_content">
+        <div class="title">流量</div>
+        <div class="rline"></div>
+        <div class="title_content">无流量，网站将毫无价值！我们通过建站 8 大维度，严格执行其规范。从一开始你就领先同行了！</div>
+        <ul>
+            <li>
+                <div class="icon_group">
+                    <i class="iconfont icon-yunfuwuqi"></i>
+                    <p>服务器</p>
+                </div>
+                <div class="txt_down">
+                    我们采用阿里云服务器来部署网站项目，能够有效保证网站的稳定性与安全性
+                </div>
+            </li>
+
+            <li>
+                <div class="icon_group">
+                    <i class="iconfont icon-yuanchuangtag"></i>
+                    <p>原创度</p>
+                </div>
+                <div class="txt_down">
+                    我们设计制作的网站项目均为原创开发，针对搜索引擎有着极佳的友好度。
+                </div>
+            </li>
+
+            <li>
+                <div class="icon_group">
+                    <i class="iconfont icon-seo-marketing-business-code-validation"></i>
+                    <p>TKD细节</p>
+                </div>
+                <div class="txt_down">
+                    每一个网页都考虑到SEO优化细节，针对客户关键词进行TKD设计。
+                </div>
+            </li>
+
+            <li>
+                <div class="icon_group">
+                    <i class="iconfont icon-shejiguifan"></i>
+                    <p>版面设计</p>
+                </div>
+                <div class="txt_down">
+                    在考虑设计精美的同时兼顾搜索引擎规则
+                </div>
+            </li>
+
+            <li>
+                <div class="icon_group">
+                    <i class="iconfont icon-yuming"></i>
+                    <p>域名URL</p>
+                </div>
+                <div class="txt_down">
+                    为客户提供域名及URL设计规范，符合所有搜索擎优化规则
+                </div>
+            </li>
+
+            <li>
+                <div class="icon_group">
+                    <i class="iconfont icon-lianjie"></i>
+                    <p>内部链接</p>
+                </div>
+                <div class="txt_down">
+                    完善的内部链接使用户浏览度高，同时迎合搜索蜘蛛爬取。
+                </div>
+            </li>
+
+            <li>
+                <div class="icon_group">
+                    <i class="iconfont icon-V"></i>
+                    <p>外链</p>
+                </div>
+                <div class="txt_down">
+                    为客户提供一些外链解决方案，以低成本达到高收益
+                </div>
+            </li>
+
+            <li>
+                <div class="icon_group">
+                    <i class="iconfont icon-yonghu"></i>
+                    <p>用户体验</p>
+                </div>
+                <div class="txt_down">
+                    无论从页面流畅度还是功能完善度，我们遵循以用户为中心进行设计开发。
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+<div class="bg bg3" id="bg3">
+    <div class="bg_content">
+        <div class="title">线索</div>
+        <div class="bline"></div>
+        <div class="txt_frame">
+            <div class="left_txt">
+                <p>场景化应用设计</p>
+                <p>让访客能够清晰的了解我们的产品、服务以及我们的优势所在。并通过一系列的引导咨询，优化的落地页设计。最终提升咨询转化率！</p>
+            </div>
+            <div class="right_icon">
+                <div class="icon icon1"><i class="iconfont icon-liuliangjiance"></i></div>
+                <div class="icon icon2"><i class="iconfont icon-zixun"></i></div>
+                <div class="icon icon3"><i class="iconfont icon-qian"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg bg4" id="bg4">
+    <div class="bg_content">
+        <div class="title">成交</div>
+        <div class="rline"></div>
+        <div class="txt_frame">
+            <div class="left_icon">
+                <img src="/static/images/img01.png">
+            </div>
+            <div class="right_txt">
+                <p>订单转化</p>
+                <p>从展现 > 流量 > 咨询 > 成交，每一个环节上离不开专业的建站技术、也许两个网站看上去差不多。但是所体现的价值有可能差别万倍。因为其内部的运转是您所看不见的。</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg bg5" id="bg5">
+    <div class="bg_content">
+        <div class="title">我需要做营销型企业官网</div>
+        <div class="form_lx">
+            <input type="text" name="tel" class="tel" placeholder="请输入联系电话"><button class="btn_tel">免费通话</button>
+            <button class="btn_msg">或给我们留言</button>
+            <div class="tel400">400 1234 5678</div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+<script>
+    $(function(){
+        $(".main_nav ul li:nth-child(2)").hover(function(){
+            $("#sub_nav2").stop().slideDown("fast");
+        },function(){
+            $("#sub_nav2").stop().slideUp("fast");
+            $(".main_nav ul li:nth-child(2) a").removeClass();
+        });
+
+        $("#sub_nav2").hover(function(){
+
+            //当鼠标移到子菜单上时，固定显示
+            $("#sub_nav2").stop().show();
+
+            //并设置主菜单为常亮状态
+            $(".main_nav ul li:nth-child(2) a").addClass("active");
+
+            //子菜单下划线滑动
+            var lis = $('#sub_nav2>.sub_frame>ul>li>a');
+            var h = $('#buoy');
+            lis.hover(function () {
+                h.stop().animate({
+                    'left': $(this).offset().left
+                }, 200).css("width",$(this).width());
+            }, function () {
+                h.stop().animate({
+                    'left': '-200px'
+                }, 200);
+            });
+
+        },function(){
+            $("#sub_nav2").stop().slideUp("normal");
+            $(".main_nav ul li:nth-child(2) a").removeClass();
+        });
+        ///////////////////////////////////////////////////////////////////
+
+        $(".main_nav ul li:nth-child(3)").hover(function(){
+            $("#sub_nav3").stop().slideDown("fast");
+        },function(){
+            $("#sub_nav3").stop().slideUp("fast");
+            $(".main_nav ul li:nth-child(3) a").removeClass();
+        });
+
+        $("#sub_nav3").hover(function(){
+
+            //当鼠标移到子菜单上时，固定显示
+            $("#sub_nav3").stop().show();
+
+            //并设置主菜单为常亮状态
+            $(".main_nav ul li:nth-child(3) a").addClass("active");
+
+            //子菜单下划线滑动
+            var lis = $('#sub_nav3>.sub_frame>ul>li>a');
+            var h = $('#buoy2');
+            lis.hover(function () {
+                h.stop().animate({
+                    'left': $(this).offset().left
+                }, 200).css("width",$(this).width());
+            }, function () {
+                h.stop().animate({
+                    'left': '-200px'
+                }, 200);
+            });
+
+        },function(){
+            $("#sub_nav3").stop().slideUp("normal");
+            $(".main_nav ul li:nth-child(3) a").removeClass();
+        });
+        ///////////////////////////////////////////////////////////////////
+    })
+</script>
+
+{% block jQuery %}
+<script>
+    $(function(){
+        //滚动条触发BANNER中文字动画
+        var win_h = $(window).height()*0.7;
+        var con2_t = $('.bg2 .bg_content').offset().top-win_h;
+        var con3_t = $('.bg3 .bg_content').offset().top-win_h;
+        var con4_t = $('.bg4 .bg_content').offset().top-win_h;
+        var con5_t = $('.bg5 .bg_content').offset().top-win_h;
+        $(window).scroll(function(){
+            var s_top = $(this).scrollTop();
+
+            if(s_top >= con2_t){
+                $('.bg2 .bg_content').addClass("active");
+            }
+            if(s_top >= con3_t){
+                $('.bg3 .bg_content').addClass("active");
+            }
+            if(s_top >= con4_t){
+                $('.bg4 .bg_content').addClass("active");
+            }
+            if(s_top >= con5_t){
+                $('.bg5 .bg_content').addClass("active");
+            }
+        });
+
+        //点击圆点激活当前高亮状态
+        $("#pos_dot>ul>li>a").click(function () {
+            $("#pos_dot>ul>li>a").removeClass()
+            $(this).addClass("active")
+        });
+
+        //滚动条触发左侧定位圆点变化
+        var win_h2 = $(window).height()*0.1;
+        var bg1_t = $('.bg1').offset().top-win_h2;
+        var bg2_t = $('.bg2').offset().top-win_h2;
+        var bg3_t = $('.bg3').offset().top-win_h2;
+        var bg4_t = $('.bg4').offset().top-win_h2;
+        var bg5_t = $('.bg5').offset().top-win_h2;
+        $(window).scroll(function(){
+            var s_top = $(this).scrollTop();
+
+            if(s_top >= bg1_t && s_top <= bg1_t+100){
+                $("#pos_dot>ul>li>a").removeClass();
+                $("#pos_dot>ul>li:nth-child(1)>a").addClass("active");
+            }
+
+            if(s_top >= bg2_t && s_top <= bg2_t+100){
+                $("#pos_dot>ul>li>a").removeClass();
+                $("#pos_dot>ul>li:nth-child(2)>a").addClass("active");
+            }
+            if(s_top >= bg3_t && s_top <= bg3_t+100){
+                $("#pos_dot>ul>li>a").removeClass();
+                $("#pos_dot>ul>li:nth-child(3)>a").addClass("active");
+            }
+            if(s_top >= bg4_t && s_top <= bg4_t+100){
+                $("#pos_dot>ul>li>a").removeClass();
+                $("#pos_dot>ul>li:nth-child(4)>a").addClass("active");
+            }
+            if((s_top >= bg5_t && s_top <= bg5_t+100) || ($(document).scrollTop() >= $(document).height() - $(window).height()) ){
+                $("#pos_dot>ul>li>a").removeClass();
+                $("#pos_dot>ul>li:nth-child(5)>a").addClass("active");
+            }
+
+        });
+
+    })
+</script>
+{% endblock %}
+
+<div id="footer">
+    <ul>
+        <li>Copyright ©2020-2030 All Rights Reserved. 上海特昊姆网络工作室</li>
+        <li><a href="http://www.beian.miit.gov.cn/" target="_blank">沪ICP备20020139号</a></li>
+    </ul>
+</div>
+
+</body>
+</html>

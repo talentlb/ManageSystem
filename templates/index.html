@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% block TKD %}
+    <title>上海网站建设-网络推广优化-网站定制设计公司「上海特昊姆」</title>
+	<meta name="keywords" content="上海网站建设,上海网站设计,上海网站制作,上海网站优化,上海网络推广" />
+	<meta name="description" content="『网站建设』上海特昊姆是一家是专注于网站设计与线上营销推广的公司,提供营销型、品牌展示型企业官网建设『设计网站』同时承接网站SEO托管服务！电话:15618110227" />
+{% endblock %}
+{% block nav_index %} class="active"{% endblock %}
+
+{% block page_content %}
+<div class="index_bg">
+    <div class="index_frame">
+        <div class="index_left">
+            <div class="center_circle" id="triggerModel" data-toggle="modal" data-target="#myModal">我已经有网站</div>
+            <ul class="sub_circle">
+                <li>使用的模板网站</li>
+                <li>网站收录少</li>
+                <li>建站比较早</li>
+                <li>无移动端网站</li>
+                <li>关键词排名不理想</li>
+                <li>打开速度慢不稳定</li>
+                <li>关键词被对手抢占</li>
+                <li>没有专职维护人员</li>
+                <li>网站咨询量低</li>
+                <li>快排无法摆脱</li>
+                <li>竞价推广太烧钱</li>
+            </ul>
+        </div><!-- left end -->
+        <div class="index_right">
+            <div class="center_circle2" id="triggerModel" data-toggle="modal" data-target="#myModal">没有网站</div>
+            <ul class="sub_circle2">
+                <li>还没想好怎么做</li>
+                <li>没有太多投入资金</li>
+                <li>不知道收益如何</li>
+                <li>没有专职管理人员</li>
+                <li>不知道怎么运营</li>
+                <li>行业不适合做网站</li>
+            </ul>
+        </div><!-- right end -->
+    </div>
+</div>
+
+<!--  模态框--留言-------------------------------------------------------------------------------------------------------->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+	  <div class="modal-content">
+	  	<div class="form_content">
+            <div class="form_title">给我们留言</div>
+            <form id="form1" name="form1" method="post" action="/send_msg/" onsubmit="return theckform();">
+            <div class="form_item">
+                <div class="form_label"><span>*</span> 您的需求：</div>
+                <div class="form_control"><input type="text" name="xq_title" id="xq_title" class="input1" size="69" autocomplete="off"></div>
+            </div>
+
+            <div class="form_item form_textarea">
+                <div class="form_label">需求说明：</div>
+                <div class="form_control"><textarea rows="4" cols="70" name="xq_content" id="xq_content"></textarea></div>
+            </div>
+
+            <div class="form_item">
+                <div class="form_label"><span>*</span> 联系人：</div>
+                <div class="form_control"><input type="text" name="lxr" id="lxr" class="input1" autocomplete="off"></div>
+            </div>
+
+            <div class="form_item">
+                <div class="form_label"><span>*</span> 联系电话：</div>
+                <div class="form_control"><input type="text" name="tel" id="tel" class="input1" autocomplete="off"></div>
+            </div>
+            <div class="form_item">
+                <div class="form_label"></div>
+                <div class="form_control"><input type="submit" name="提交" class="submit_msg"></div>
+            </div>
+            </form>
+        </div>
+
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		 </div>
+		 </div>
+	 </div>
+</div>
+<!-- 模态框 结束------------------------------------------------------------------------------------------------------->
+{% endblock %}
+
+{% block jQuery %}
+<script>
+    $(function(){
+        $(".center_circle").hover(function () {
+            $(".center_circle").text("免费获取改版方案")
+        },function () {
+            $(".center_circle").text("我已经有网站");
+        })
+        $(".center_circle2").hover(function () {
+            $(".center_circle2").text("免费获取建站方案").css("font-size","14px")
+        },function () {
+            $(".center_circle2").text("没有网站").css("font-size","20px");
+        });
+
+        $('#triggerModel').trigger('click');
+    })
+</script>
+{% endblock %}
