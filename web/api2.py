@@ -423,6 +423,7 @@ def login(request):
                 request.session['user_id'] = items[0].id
                 request.session['code'] = items[0].code
                 request.session['name'] = items[0].name
+                request.session['accountBookKey'] = items[0].accountBookKey_id
                 if loginType == '0':
                     request.session['userType'] = 0
                 else:
